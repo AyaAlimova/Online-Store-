@@ -1,0 +1,37 @@
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  gap: 150px; /* Space between links */
+}
+
+.links a {
+  color: rgb(217, 214, 214); /* Text color */
+  text-decoration: none;
+  text-shadow: 1px 1px 2px rgb(0,0,0,0.5);
+  font-size: 18px;
+  font-family: cursive;
+  transition: color 0.3s;
+  
+}
+
+.links a:hover {
+  color: #fbf9f9; /* Light color on hover */
+}
+
+.links a.active {
+  font-weight: bold; /* Bold active link */
+  color: white;
+}
+
+
+
+
+
