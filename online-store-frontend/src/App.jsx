@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Header from './components/Header'
 
 function App() {
   //make initial request to backend on first render
@@ -18,12 +19,13 @@ function App() {
     <div className='App'>
        <Router>
         <Navbar />
+        <Header />
         <Routes>
         {/* <Route path="/" element={<Main />} />
         <Route path="/collection" element={<Collection />} />
-        <Route path="/collection/heels" element={<Heels />} />
-        <Route path="/collection/boots" element={<Boots />} />
-        <Route path="/collection/ballets" element={<Ballets />} />
+        <Route path="/collection/heels" element={<Collection />} />
+        <Route path="/collection/boots" element={<Collection />} />
+        <Route path="/collection/ballets" element={<Collection />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/info" element={<Info />} />
