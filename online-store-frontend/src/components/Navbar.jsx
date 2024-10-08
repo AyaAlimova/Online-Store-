@@ -9,13 +9,25 @@ function Navbar() {
     <div className='navbar'>
       <div className='links'>
         <Link to = "/">Main</Link>
-        <Link to = "/collection">Collection</Link>
+        <div className='dropdown'>
+        <Link to = "/collection" className='dropdown-btn'>Collection</Link>
+         <div className='dropdown-content'>
+          <Link to = '/collection/heels'>Heels</Link>
+          <Link to = '/collection/boots'>Boots</Link>
+          <Link to = '/collection/ballets'>Ballets</Link>
+         </div>
+        </div>
         <Link to= "/about">About us</Link>
         <Link to = "/contact">Contact</Link>
         <Link to = "/info">Useful Information</Link>
-        <Link to = "/cart">
+        <div className='nav-login-cart'>
+          <button>Login</button>
+          <Link to = "/cart">
           <ShoppingCart size={40} />
-        </Link>
+          </Link>
+          <div className="nav-cart-count">0</div>
+        
+        </div>
 
       </div>
     </div>
