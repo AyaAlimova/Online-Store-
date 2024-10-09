@@ -1,0 +1,27 @@
+.main-container{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  
+}
+.product-container{ 
+  padding: 20px;
+  background-color:rgb(235, 235,235) 
+}
+.product-grid{
+  display: flex;
+}
+
+.product-card{
+  text-align: center;
+}
+
+.product-image{
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.product-image:hover{
+  transform: scale(1.1);
+}

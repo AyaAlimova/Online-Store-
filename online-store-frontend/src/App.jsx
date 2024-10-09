@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import PromoSection from './components/PromoSection'
 import SubPromoSection from './components/SubPromoSection'
+import ProductSection from './components/ProductSection'
 
 function App() {
   //make initial request to backend on first render
@@ -24,6 +25,7 @@ function App() {
         <Header />
         <PromoSection />
         <SubPromoSection />
+        <ProductSection />
         <Routes>
         {/* <Route path="/" element={<Main />} />
         <Route path="/collection" element={<Collection />} />
