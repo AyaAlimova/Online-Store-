@@ -1,0 +1,66 @@
+ .sub-promo{
+  display: flex;
+  justify-content:space-around;
+  padding: 20px;
+  align-items: center
+}
+
+.image-container{
+  position: relative;
+  width: 300px;
+}
+
+.text-h3{
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: rgb(11, 11, 11);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.sub-promo-image {
+  width: 180%;
+  height: auto
+}
+
+.form {
+  padding: 10px;
+  border-radius: 5px; 
+  background-color: #fff1b2;
+  padding: 22px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 300px; 
+  text-align: center;
+}
+.form p {
+  font-size: 16px;
+  font-style: italic;
+  color: #4a4a4a;
+  margin-bottom: 20px;
+}
+
+.input-style {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #fff1b2;
+}
+
+.submit-button {
+  padding: 10px;
+  width: 60px;
+  background-color: rgb(10, 10, 10);
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.submit-button :hover{
+  background-color: azure;
+}

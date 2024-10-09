@@ -1,49 +1,37 @@
-import React from 'react'
-import mainPicture from '../assets/header.webp'
+import React, { useEffect, useState } from 'react'
+import image from '../assets/header.webp'
+import image1 from '../assets/header1.webp'
+import image2 from '../assets/header2.webp'
+import "./promoSection.css"
 
 
 
 const PromoSection = () => {
+  const images = [image, image1, image2];
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() =>{
+    const interval = setInterval(() =>{
+      setCurrentImageIndex((prevIndex) => (prevIndex+1) % images.length)
+    }, 3000)
+
+    return () => clearInterval(interval)
+  }, [])
+
   return (
-    <div style={promoSectionStyle}>
-      <img src={mainPicture} alt="Main Promo" style={promoImageStyle} />
-      <div style={promoTextContainerStyle}>
-        <h2>Fallsdfsffdsfsfdfs!</h2>
-        <h3>Discount 20%</h3>
-        <button style={buttonStyle}>To Store</button>
+    <div className='promoSectionStyle'>
+      <img 
+      src={images[currentImageIndex]}
+      alt="Main Promo" 
+      className='promoImageStyle' 
+      />
+      <div className='promoTextContainerStyle'>
+        <h2>Buy More, Save More!</h2>
+        <h3>20% Off Fall Favorites!</h3>
+        <button className='buttonStyle'>Shop now</button>
       </div>
     </div>
   );
-};
-
-const promoSectionStyle = {
-  position: 'relative', // Allows absolute positioning of text inside
-  width: '100%',
-  height: '500px', // Adjust to your desired section height
-};
-
-const promoImageStyle = {
-  // width: '100%',
-  // height: '130%',
-  objectFit: 'cover', // Ensures the image covers the entire section
-};
-
-const promoTextContainerStyle = {
-  position: 'absolute',
-  top: '60%',
-  left: '15%',
-  backgroundColor: 'rgba(255, 255, 255, 0.2)', // Semi-transparent background
-  padding: '20px',
-  maxWidth: '300px',
-  textAlign: 'left',
-  zIndex: 2, // Makes sure the text is above the image
-};
-
-const buttonStyle = {
-  backgroundColor: '#fff',
-  border: '1px solid #000',
-  padding: '10px 20px',
-  marginTop: '20px',
 };
 
 export default PromoSection;

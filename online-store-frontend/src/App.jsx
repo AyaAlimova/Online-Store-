@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import PromoSection from './components/PromoSection'
+import SubPromoSection from './components/SubPromoSection'
 
 function App() {
   //make initial request to backend on first render
@@ -22,6 +23,7 @@ function App() {
         <Navbar />
         <Header />
         <PromoSection />
+        <SubPromoSection />
         <Routes>
         {/* <Route path="/" element={<Main />} />
         <Route path="/collection" element={<Collection />} />
