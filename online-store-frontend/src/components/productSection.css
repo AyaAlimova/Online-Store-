@@ -1,8 +1,6 @@
 .main-container{
-  display: flex;
-  justify-content: space-around;
-  padding: 10px;
-  
+  position: relative;
+  width: 100%
 }
 .product-container{ 
   padding: 20px;

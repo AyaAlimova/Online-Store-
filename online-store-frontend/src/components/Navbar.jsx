@@ -21,7 +21,7 @@ function Navbar() {
         <Link to = "/contact">Contact</Link>
         <Link to = "/info">Useful Information</Link>
         <div className='nav-login-cart'>
-          <button>Login</button>
+          <Link to ="/login"><button>Login</button></Link>
           <Link to = "/cart">
           <ShoppingCart size={40} />
           </Link>

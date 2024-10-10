@@ -1,11 +1,28 @@
 import mongoose from "mongoose";
 
 //create a schema to validate our data and determine what it looks like
-const storeSchema = mongoose.Schema({
-      text: {type: String},
-      cost: {type: Number}
-})
+const productSchema = mongoose.Schema({
+      name: {
+        type: String,
+        required: true, // name is mandatory
+        trim: true,     // trims whitespace
+      },
+      price: {
+        type: Number,
+        required: true, // price is mandatory
+        min: 0          // price should be positive
+      },
+      images: {
+        type: String, 
+        required: true  // at least one image is mandatory
+      },
+      description: {
+        type: String,
+        required: true,
+        maxlength: 500  // max length for the description
+      }
+    });
 
-const Store = mongoose.model('shoes', storeSchema)
+const Store = mongoose.model('products', productSchema)
 
 export default Store

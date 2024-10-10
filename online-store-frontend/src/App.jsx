@@ -2,10 +2,9 @@ import { useEffect } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Header from './components/Header'
-import PromoSection from './components/PromoSection'
-import SubPromoSection from './components/SubPromoSection'
-import ProductSection from './components/ProductSection'
+
+import Main from './Pages/Main.jsx'
+import Collection from './Pages/Collection.jsx'
 
 function App() {
   //make initial request to backend on first render
@@ -22,14 +21,10 @@ function App() {
     <div className='App'>
        <Router>
         <Navbar />
-        <Header />
-        <PromoSection />
-        <SubPromoSection />
-        <ProductSection />
         <Routes>
-        {/* <Route path="/" element={<Main />} />
-        <Route path="/collection" element={<Collection />} />
-        <Route path="/collection/heels" element={<Collection />} />
+         <Route path="/" element={<Main />} />
+         <Route path="/collection" element={<Collection />} />
+        {/*<Route path="/collection/heels" element={<Collection />} />
         <Route path="/collection/boots" element={<Collection />} />
         <Route path="/collection/ballets" element={<Collection />} />
         <Route path="/about" element={<About />} />
