@@ -1,0 +1,52 @@
+
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.contact-info {
+  background-color: rgb(209 232 211);
+  border: 1px solid black;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+
+.image-section {
+  border: 1px solid black;
+  width: 45%;
+  position: relative;
+  left: 50%;
+  
+}
+
+.form-section {
+ padding-top: 5px;
+ border: 1px solid black;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}

@@ -22,6 +22,7 @@
   padding: 10px 20px;
   margin-top: 20px;
   cursor: pointer;
+  color:black;
 }
 .buttonStyle:hover {
   background-color: #f0f0f0; /* Change to a lighter background on hover */

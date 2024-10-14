@@ -64,9 +64,10 @@
     width: 270px; /* Set the width of the button */
     display: block;
     margin: 0 auto; /* Center the button horizontally */
+    color:black;
   }
   .submit-button:hover{
-    background-color: #f0f0f0; /* Change to a lighter background on hover */
+    background-color:rgb(247, 161, 247);
     border-color: #333; /* Change border color */
   }
    

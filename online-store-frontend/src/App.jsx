@@ -1,18 +1,21 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-
 import Main from './Pages/Main.jsx'
 import Collection from './Pages/Collection.jsx'
+import Contact from './Pages/Contact.jsx'
 
 function App() {
+    const [product, setProduct] = useState([])
+
   //make initial request to backend on first render
   useEffect(() =>{
     async function url() {
-      const response = await fetch ("http://localhost:2020")
+      const response = await fetch ("http://localhost:2020/collection")
       const data = await response.json()
       console.log(data);
+      setProduct(data)
     }
     url()
   }, [])
@@ -24,11 +27,12 @@ function App() {
         <Routes>
          <Route path="/" element={<Main />} />
          <Route path="/collection" element={<Collection />} />
+         <Route path="/contact" element={<Contact />} />
         {/*<Route path="/collection/heels" element={<Collection />} />
         <Route path="/collection/boots" element={<Collection />} />
         <Route path="/collection/ballets" element={<Collection />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+      
         <Route path="/info" element={<Info />} />
         <Route path="/cart" element={<Cart />} />
            */}
