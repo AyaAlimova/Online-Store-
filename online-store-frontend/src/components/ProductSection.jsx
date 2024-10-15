@@ -21,7 +21,8 @@ function ProductSection() {
    
         <div className="collections">
         {newCollection.map((item, i) => {
-          return <Item key = {i} id = {item.id} name = {item.name} image = {item.image} price = {item.price}/>
+          return <Item key = {i} id = {item.id} name = {item.name} 
+          image = {item.image}  price = {item.price}/>
          })}
         </div>
     </div>

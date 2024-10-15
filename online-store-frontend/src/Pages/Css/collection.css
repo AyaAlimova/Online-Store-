@@ -1,0 +1,27 @@
+.shop-container {
+  position: relative;
+  width: 100%;
+}
+
+.shop-category {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 10px;
+  gap: 30px;
+}
+
+
+.product-img{
+  width: 215px;
+  height: 215px;
+}
+
+.item-name {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.item-price {
+  font-size: 1em;
+  color: #333;
+}

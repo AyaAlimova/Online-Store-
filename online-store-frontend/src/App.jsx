@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Main from './Pages/Main.jsx'
 import Collection from './Pages/Collection.jsx'
 import Contact from './Pages/Contact.jsx'
-import Footer from './components/Footer.jsx'
+import Footer from './components/Footer/Footer.jsx'
 
 function App() {
     const [product, setProduct] = useState([])

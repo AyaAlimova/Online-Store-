@@ -17,7 +17,7 @@ import boots7 from './boots7.webp'
 
 import ballet1 from './ballet1.webp'
 import ballet2 from './ballet2.webp'
-import ballet3 from './3.webp'
+import ballet3 from './ballet3.webp'
 import ballet4 from './ballet4.webp'
 import ballet5 from './ballet5.webp'
 
@@ -40,7 +40,7 @@ let all_products = [
     name: 'Naturalizer Bristol Sandal',
     category: "heels",
     price: 35.99,
-    images: heels2,
+    image: heels2,
     description: 'Sashay your way to the dance floor when wearing the Bristol sandal from Naturalizer. These two-piece heels are fashioned with a sleek upper and chunky heel for the right amount of height!'
 
   },
@@ -172,4 +172,4 @@ let all_products = [
   
 ]
 
-export default products
+export default all_products
