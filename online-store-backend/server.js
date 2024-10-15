@@ -15,7 +15,10 @@ app.use(cors())
 //data from client stored in request.body and formatted as json
 app.use(express.json())
 
-
+app.get('/', (req, res) => {
+  // Send product data
+  res.json('heelo')
+});
 
 
 //setup server to listen on a specific port

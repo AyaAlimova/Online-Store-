@@ -144,7 +144,7 @@ let all_products = [
   {
     id:14,
     name: 'Naturalizer Havana Flat',
-    category: "ballet",
+    category: "ballets",
     price: 47.80,
     image: ballet1,
     description: 'Sharpen your look with the Naturalizer Havana slip-on flat. Subtly elevated with a rounded block heel with shiny trim, this slip-on is highlighted with a pointed toe and V-shaped vamp and Contour+ technology for enhanced fit and comfort.'
@@ -153,7 +153,7 @@ let all_products = [
    {
     id:15,
     name: 'Naturalizer Havana Flat',
-    category: "ballet",
+    category: "ballets",
     price: 37.82,
     image: ballet2,
     description: 'Sharpen your look with the Naturalizer Havana slip-on flat. Subtly elevated with a rounded block heel with shiny trim, this slip-on is highlighted with a pointed toe and V-shaped vamp and Contour+ technology for enhanced fit and comfort.'
@@ -162,7 +162,7 @@ let all_products = [
   {
     id:16,
     name: 'Naturalizer Havana Flat',
-    category: "ballet",
+    category: "ballets",
     price: 37.82,
     image: ballet3,
     description: 'Sharpen your look with the Naturalizer Havana slip-on flat. Subtly elevated with a rounded block heel with shiny trim, this slip-on is highlighted with a pointed toe and V-shaped vamp and Contour+ technology for enhanced fit and comfort.'

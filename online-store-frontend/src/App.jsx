@@ -6,6 +6,9 @@ import Main from './Pages/Main.jsx'
 import Collection from './Pages/Collection.jsx'
 import Contact from './Pages/Contact.jsx'
 import Footer from './components/Footer/Footer.jsx'
+import LoginSignup from './Pages/LoginSignup.jsx'
+import Product from './Pages/Product.jsx'
+
 
 function App() {
     const [product, setProduct] = useState([])
@@ -27,19 +30,17 @@ function App() {
         <Navbar />
         <Routes>
          <Route path="/" element={<Main />} />
-         <Route path="/collection" element={<Collection />} />
+         <Route path="/collection" element={<Collection allProducts={product}/>} />
+         <Route path="/collection/:category" element={<Collection allProducts={product} />} />
          <Route path="/contact" element={<Contact />} />
-         {/* <Route path="/heels" element={<Collection category = 'heels'/>} /> */}
-        {/*
-        <Route path="/boots" element={<Collection category = 'boots />} />
-        <Route path="/ballets" element={<Collection category = 'ballets />} />
-          <Route path = ':productId' element = {<Collection />}
-          </Route>
-        <Route path="/about" element={<About />} />
-      
-        <Route path="/info" element={<Info />} />
-        <Route path="/cart" element={<Cart />} />
-           */}
+         <Route path ="/login" element={<LoginSignup />}/>
+         <Route path='/product' element={<Product />}>
+            <Route path = ":productId" element= {<Product />}/>
+         </Route>
+         {/* <Route path="/about" element={<About />} />
+         <Route path="/info" element={<Info />} />
+         <Route path="/cart" element={<Cart />} /> */}
+           
         </Routes>
         <Footer />
       </Router>
