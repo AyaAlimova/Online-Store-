@@ -12,7 +12,7 @@ const productSchema = mongoose.Schema({
         required: true, // price is mandatory
         min: 0          // price should be positive
       },
-      images: {
+      image: {
         type: String, 
         required: true  // at least one image is mandatory
       },

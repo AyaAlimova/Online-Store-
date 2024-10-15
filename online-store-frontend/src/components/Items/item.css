@@ -1,0 +1,19 @@
+.item{
+  position: relative;
+  width: 100%;
+}
+.product-img{
+  height: 300px;
+  width: 300px;
+}
+.item p {
+  margin: 6px 0px;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.item:hover{
+  transform:scale(1.05);
+  transition: 0.6s;
+}

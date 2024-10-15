@@ -5,8 +5,7 @@ import 'dotenv/config'
 import cors from 'cors'
 import connectDB  from './config.js'
 
-import storeModel from './models/storeModel.js'
-import product from './data/Products.js'
+
 
 //create express app
 const app = express()
@@ -16,28 +15,6 @@ app.use(cors())
 //data from client stored in request.body and formatted as json
 app.use(express.json())
 
-app.get('/collection', async (req, res) => {
-  try{
-    const product = await storeModel.find({})
-    res.status(200).json(product)
-  }
-  catch(error){
-    res.status(400).json(error)
-  }
-})
-
-// a route that creates and adds a product document to the database
-app.post('/collection', async (req, res) => {
-  try{
-
-    await storeModel.deleteMany({})
-    const productSeeder = await storeModel.insertMany(product)
-    res.send(productSeeder)
-  }
-  catch(error){
-    res.status(400).json(error)
-  }
-})
 
 
 

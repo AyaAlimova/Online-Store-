@@ -1,13 +1,11 @@
 .promoSectionStyle {
   position: relative;
   width: 100%;
-
-  
 }
 
 .promoTextContainerStyle {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 5%;
   background-color: rgba(255, 255, 255, 0.2);
   padding: 20px;

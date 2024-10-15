@@ -1,15 +1,19 @@
-// import express from 'express';
-// const router = express.Router();
+import express from 'express';
 
-// import storeModel from './models/storeModel.js'
-// import products from './data/Products.js'
+const router = express.Router();
 
-// router.post('/collection', async (req, res) => {
-//   await storeModel.deleteMany({})
-//   const UserSeeder = await User.insertMany(products)
-//   res.send({UserSeeder})
-// }
-// )
+import storeModel from './models/storeModel.js'
+import products from '../online-store-frontend/src/assets/allProducts.js'
 
-// export default router; 
+
+router.post('/collection', async (req, res) => {
+  await storeModel.deleteMany({})
+  const ProductSeeder = await storeModel.insertMany(products)
+  res.send({ProductSeeder})
+
+}
+)
+
+
+export default router; 
 
