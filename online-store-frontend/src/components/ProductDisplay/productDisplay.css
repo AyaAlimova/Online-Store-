@@ -1,0 +1,95 @@
+.product-display{
+  display: flex;
+  margin: 0px 0px;
+}
+.product-display-left{
+  display: flex;
+  gap:17px
+}
+
+.product-display-img img{
+  width: 300px;
+  height: 300px;
+}
+.product-display-right {
+  margin: 0px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.product-display-right h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.price {
+  font-size: 24px;
+  color: #000;
+  margin: 5px 0;
+}
+.description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 20px;
+}
+.add-to-cart-btn {
+  background-color: #f7c600;
+  color: #fff;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #e6b500;
+}
+
+/* Style the container for the size dropdown */
+.product-size {
+  margin: 20px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.product-size label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Style the dropdown select element */
+.product-size select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  width: 150px;
+  outline: none;
+  cursor: pointer;
+  appearance: none; /* Hides the default arrow in some browsers */
+  -webkit-appearance: none; /* For Safari/Chrome */
+  -moz-appearance: none; /* For Firefox */
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23CCC" d="M2 0L0 2h4L2 0z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+}
+
+/* Add hover effects */
+.product-size select:hover {
+  border-color: #888;
+}
+
+/* Add focus effect */
+.product-size select:focus {
+  border-color: #333;
+}
+
+/* Style for the options within the dropdown */
+.product-size option {
+  padding: 10px;
+  font-size: 16px;
+}
