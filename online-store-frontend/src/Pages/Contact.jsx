@@ -1,16 +1,12 @@
 import React from 'react'
-import ContactSection from '../components/contact/ContactSection'
-import ImageSection from '../components/contact/ImageSaction'
-import FormSection from '../components/contact/FormSection'
 import Header from '../components/Header'
+import ContactPage from '../components/contact/ContactPage'
 
 function Contact() {
   return (
     <div>
       < Header />
-      <ContactSection />
-      <ImageSection />
-      <FormSection />
+      < ContactPage />
     </div>
   )
 }

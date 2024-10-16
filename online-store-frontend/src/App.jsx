@@ -9,7 +9,8 @@ import Footer from './components/Footer/Footer.jsx'
 import LoginSignup from './Pages/LoginSignup.jsx'
 import Product from './Pages/Product.jsx'
 import Cart from './Pages/Cart.jsx'
-import { Password } from 'phosphor-react'
+
+import AboutUs from './Pages/AboutUs.jsx'
 
 
 function App() {
@@ -41,10 +42,7 @@ function App() {
             <Route path = ":productId" element= {<Product />}/>
          </Route>
          <Route path="/cart" element={<Cart />} /> 
-         {/* <Route path="/about" element={<About />} />
-         <Route path="/info" element={<Info />} />
-         */}
-           
+         <Route path="/about" element={<AboutUs />} />
         </Routes>
         <Footer />
       </Router>

@@ -1,52 +1,67 @@
 
 
-.contact-section {
+.container {
   display: flex;
   flex-direction: column;
-  width: 45%;
+  align-items: center;
+  width: 100%;
 }
 
-.contact-info {
-  background-color: rgb(209 232 211);
+.contact-section-container {
+  display: flex;
+  justify-content: space-between; 
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 30px;
+}
+.contact-info{
   border: 1px solid black;
-  padding: 20px;
-  margin-bottom: 15px;
+  background-color: rgb(194, 245, 189);
 }
 
-
-.image-section {
+.form-section p {
   border: 1px solid black;
-  width: 45%;
-  position: relative;
-  left: 50%;
+ 
+}
+.contact-section, .form-section {
+  width: 60%; 
   
+}
+.form-section{
+  
+  width: 100%;
+}
+.image-section {
+  width: 35%; 
 }
 
 .form-section {
- padding-top: 5px;
- border: 1px solid black;
+  margin-top: 0px; 
+}
 
+.contact-info, .map {
+  margin-bottom: 15px;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 form input, form textarea {
-  margin-bottom: 10px;
+  width: 98%;
   padding: 10px;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
-button {
+form button {
   padding: 10px;
-  background-color: #333;
-  color: white;
-  border: none;
+  font-size: 1rem;
   cursor: pointer;
-}
-
-button:hover {
-  background-color: #555;
 }

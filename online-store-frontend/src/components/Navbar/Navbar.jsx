@@ -22,7 +22,7 @@ function Navbar() {
         </div>
         <Link to= "/about">About us</Link>
         <Link to = "/contact">Contact</Link>
-        <Link to = "/info">Useful Information</Link>
+        
         <div className='nav-login-cart'>
           {localStorage.getItem('auth-token') ? 
           <button onClick={() => {localStorage.removeItem('auth-token'); window.location.replace('/')}}>Logout</button>

@@ -1,8 +1,12 @@
 import React from 'react'
+import '../Footer/footer.css'
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <footer>
+  <p>© 2024 Fashion Point. All rights reserved.</p>
+</footer>
+
   )
 }
 

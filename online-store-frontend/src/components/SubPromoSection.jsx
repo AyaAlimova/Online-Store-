@@ -1,30 +1,44 @@
-import React from 'react'
-import image from '../assets/subsection.webp'
-import './subPromoSection.css'
-
+import React, { useState } from 'react';
+import image from '../assets/subsection.webp';
+import './subPromoSection.css';
 
 function SubPromoSection() {
-  return (
-    <>
-    <div className='sub-promo'>
-       
-        <div className="image-container">
-          <h3 className='text-h3'>Find your perfect pair</h3>
-          <img src={image} alt="Sub Promo" className='sub-promo-image'/>
-          </div>
-       
-        <div className='form'>
-          <p>Stay updated on discounts,</p>
-          <p>promotions, and new arrivals</p>
-          <input type="email" placeholder="Email" className='input-style' />
-          <button className='submit-button'>Send</button>
-        </div>
-   </div>
-    </>
-  )
+    const [email, setEmail] = useState(""); // Step 1: State for the input
+
+    const handleChange = (e) => {
+        setEmail(e.target.value); // Update the email state on input change
+    };
+
+    const handleSubmit = () => {
+        console.log("Email sent:", email); // Your submission logic here
+        
+        // Clear the input field
+        setEmail(""); // Clear input
+    };
+
+    return (
+        <>
+            <div className='sub-promo'>
+                <div className="image-container">
+                   
+                    <img src={image} alt="Sub Promo" className='sub-promo-image'/>
+                </div>
+
+                <div className='form'>
+                    <p>Stay updated on discounts,</p>
+                    <p>promotions, and new arrivals</p>
+                    <input 
+                        type="email" 
+                        placeholder="Email" 
+                        className='input-style' 
+                        value={email} // Bind the input value to the state
+                        onChange={handleChange} // Handle input change
+                    />
+                    <button className='submit-button' onClick={handleSubmit}>Send</button> {/* Handle button click */}
+                </div>
+            </div>
+        </>
+    );
 }
 
-
-
-
-export default SubPromoSection
+export default SubPromoSection;

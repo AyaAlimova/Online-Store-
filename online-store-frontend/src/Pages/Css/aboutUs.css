@@ -1,0 +1,44 @@
+/* General container */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #f3e0d9;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Left side with text */
+.about-section .text-container {
+  width: 60%;
+  padding: 20px;
+}
+
+.about-section h1 {
+  font-size: 32px;
+  color: #141312;
+}
+
+.about-section p {
+  font-size: 18px;
+  color: #141313;
+  line-height: 1.6;
+}
+
+.about-section .extra-text {
+  font-size: 16px;
+  font-style: italic;
+  color: #111010;
+  margin-top: 20px;
+}
+
+/* Right side with image */
+.about-section .image-container {
+  width: 35%;
+  text-align: right;
+}
+
+.about-section .image-container img {
+  max-width: 100%;
+  border-radius: 10px;
+}
