@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import {Link} from 'react-router-dom'
 import {ShoppingCart} from "phosphor-react"
 import "./navbar.css"
+import { ShopContext } from '../../Context/ShopContext'
 
 
 function Navbar() {
+  const {getTotalCartItems} = useContext(ShopContext)
+
   return (
     <div className='navbar'>
       <div className='links'>
@@ -25,7 +28,7 @@ function Navbar() {
           <Link to = "/cart">
           <ShoppingCart size={40} />
           </Link>
-          <div className="nav-cart-count">0</div>
+          <div className="nav-cart-count">{getTotalCartItems()}</div>
         
         </div>
 
