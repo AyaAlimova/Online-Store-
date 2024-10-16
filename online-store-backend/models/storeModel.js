@@ -10,7 +10,7 @@ const productSchema = mongoose.Schema({
       },
       price: {
         type: Number,
-        required: true, // price is mandatory
+        required: false, // price is mandatory
         min: 0          // price should be positive
       },
       image: {
@@ -19,7 +19,7 @@ const productSchema = mongoose.Schema({
       },
       description: {
         type: String,
-        required: true,
+        required: false,
         maxlength: 500  // max length for the description
       },
       category:{
