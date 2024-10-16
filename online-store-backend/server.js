@@ -21,7 +21,7 @@ app.use('/api', productRoutes);
 
 app.get('/', (req, res) => {
   // Send product data
-  res.send("Express is Running");
+  res.json("Express is Running");
 });
 
 // Image storage engine

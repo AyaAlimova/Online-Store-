@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken'
 
 
 const router = express.Router();
-
+//creating endpoint for signup
 router.post('/signup', async (req, res) => {
 
   let check = await User.findOne({email:req.body.email})

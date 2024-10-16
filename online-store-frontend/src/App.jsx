@@ -9,10 +9,12 @@ import Footer from './components/Footer/Footer.jsx'
 import LoginSignup from './Pages/LoginSignup.jsx'
 import Product from './Pages/Product.jsx'
 import Cart from './Pages/Cart.jsx'
+import { Password } from 'phosphor-react'
 
 
 function App() {
     const [product, setProduct] = useState([])
+  
 
   //make initial request to backend on first render
   useEffect(() =>{
