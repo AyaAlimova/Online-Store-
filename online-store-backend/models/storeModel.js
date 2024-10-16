@@ -2,6 +2,7 @@ import mongoose from "mongoose";
 
 //create a schema to validate our data and determine what it looks like
 const productSchema = mongoose.Schema({
+    
       name: {
         type: String,
         required: true, // name is mandatory
