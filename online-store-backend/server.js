@@ -6,6 +6,7 @@ import connectDB from './config.js';
 import productRoutes from './routes/productRoutes.js'; // Import product routes
 import multer from 'multer';
 import path from 'path';
+import userRoutes from './routes/userRoutes.js'
 // Create express app
 const app = express();
 
@@ -15,7 +16,7 @@ app.use(cors());
 // Data from client stored in request.body and formatted as JSON
 app.use(express.json());
 
-
+app.use('/api', userRoutes);
 app.use('/api', productRoutes); 
 
 app.get('/', (req, res) => {
