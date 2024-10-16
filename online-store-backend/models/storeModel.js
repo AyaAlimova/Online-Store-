@@ -20,6 +20,10 @@ const productSchema = mongoose.Schema({
         type: String,
         required: true,
         maxlength: 500  // max length for the description
+      },
+      category:{
+        type:String,
+        required: true
       }
     });
 
